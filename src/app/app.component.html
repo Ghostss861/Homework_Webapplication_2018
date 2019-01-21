@@ -1,0 +1,25 @@
+<div style="text-align:left;width:500px;">
+  <h1>
+      {{ title }}!
+  </h1>
+
+  <table *ngIf="arrestablishment">
+      <!-- ADD HEADERS -->
+      <tr>
+          <th>Name</th>
+              <th>City</th>
+                  <th>Postcode</th>
+                    <th>Address</th>
+                      <th>Start year</th>
+      </tr>
+
+      <!-- BIND ARRAY TO TABLE -->
+      <tr *ngFor="let bird of arrestablishment">
+          <td>{{establishment.Name}}</td>
+              <td>{{establishment.City}}</td>
+                  <td>{{establishment.Postcode}}</td>
+                    <td>{{establishment.Address}}</td>
+                      <td>{{establishment.Start year}}</td>
+      </tr>
+  </table>
+</div>
